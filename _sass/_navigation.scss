@@ -1,0 +1,32 @@
+.navbar-default {
+    background-color: $dark-grey;
+    border: none;
+    border-radius: 0px;
+    .navbar-nav>li>a {
+        font-family: $nav-link-font;
+        font-size: 20px;
+        font-weight: bold;
+        color: $pale-blue;
+        &:hover {
+            background-color: rgba(0, 0, 0, 0);
+            color: white;
+        }
+    }
+    .navbar-nav>.active>a {
+        background-color: rgba(0, 0, 0, 0);
+        color: $off-white;
+        &:hover {
+            background-color: rgba(0, 0, 0, 0);
+            color: white;
+        }
+    }
+    .navbar-brand {
+        font-family: $nav-brand-font;
+        font-weight: 900;
+        font-size: 35px;
+        color: $pale-blue;
+        &:hover {
+            color: white;
+        }
+    }
+}

@@ -1,0 +1,9 @@
+# Site settings
+title: Diana Ruth - Blog
+description: 
+baseurl: ""
+url: ""
+github_username: dianaruth
+
+# Build settings
+markdown: kramdown
