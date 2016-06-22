@@ -1,0 +1,24 @@
+.post-list {
+    background-color: $mid-grey;
+}
+
+.date-col {
+    h5 {
+        margin-top: 25px;
+        font-size: 20px;
+    }
+}
+
+#newer-posts {
+    float: left;
+    font-size: 20px;
+    margin: 20px;
+    margin-left: 50px;
+}
+
+#older-posts {
+    float: right;
+    font-size: 20px;
+    margin: 20px;
+    margin-right: 50px;
+}

@@ -49,6 +49,10 @@
 .all-posts {
     margin-top: 70px;
     text-align: center;
+    &:hover {
+        text-decoration: none;
+        color: $bright-blue;
+    }
 }
 
 .tags {
