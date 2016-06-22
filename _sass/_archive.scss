@@ -1,13 +1,19 @@
 .indented {
-    padding-left: 50px;
+    margin-left: 20px;
     margin-top: 10px;
-    margin-bottom: 10px;
     h2, h3 {
         display: inline;
     }
 }
 
-.archive-wrapper {
-    margin-top: 20px;
-    margin-bottom: 50px;
+.tag-cloud {
+
+    margin-bottom: 60px;
+}
+
+.archive-tag {
+    &:hover {
+        background-color: $off-white;
+        cursor: default;
+    }
 }
