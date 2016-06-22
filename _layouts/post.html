@@ -1,19 +1,16 @@
 ---
 layout: default
 ---
+
 <div class="post">
-
-    <h1 class="post-title">Post 1</h1>
-    <!-- <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p> -->
-
-    <div class="post-content">
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-        <img src="images/background.jpg" />
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+    <div class="container">
+        <h1>{{page.title}}</h1>
+        <h2><time itemprop="dateCreated" datetime="{{page.date}}">{{ page.date | date: "%B %-d, %Y" }}</time></h2>
+        {{content}}
+        <br>
+        <div class="tags">
+            <h3>Tags: </h3>{% for tag in page.tags %}<span class="tag"><a href="#">{{tag}}</a></span>{% endfor %}
+        </div>
+        <div class="back-all-posts-wrapper text-center"><a class="back-all-posts" href="{{site.baseurl}}/posts/">[<< All Posts]</a></div>
     </div>
-
 </div>

@@ -33,11 +33,13 @@ h6 {
 p {
     font-family: $paragraph-font;
     color: $pale-blue;
+    font-weight: 100;
 }
 
 li {
     font-family: $paragraph-font;
-    color: $pale-blue;
+    color: $off-white;
+    font-size: 17px;
 }
 
 a {
@@ -48,42 +50,31 @@ a {
     }
 }
 
+strong {
+    font-weight: 900;
+    color: #80dfff;
+    font-size: 16px;
+}
+
+code {
+    color: $dark-grey;
+}
+
+pre {
+    background-color: $almost-white;
+    border-radius: 0px;
+}
+
+blockquote {
+    p {
+        color: $off-white;
+    }
+}
+
 img {
     width: 80%;
     display: block;
     margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 20px;
-}
-
-.img-right {
-    float: right;
-    display: inline;
-    width: 40%;
-    margin-left: 20px;
-}
-
-.img-left {
-    float: left;
-    display: inline;
-    width: 40%;
-    margin-right: 20px;
-}
-
-.tag {
-    background-color: $off-white;
-    padding: 10px 15px 10px 15px;
-    font-size: 20px;
-    &:hover {
-        background-color: white;
-        cursor: pointer;
-    }
-    a {
-        font-family: $heading-condensed-font;
-        color: $dark-grey;
-        font-weight: bolder;
-        &:hover {
-            text-decoration: none;
-        }
-    }
 }

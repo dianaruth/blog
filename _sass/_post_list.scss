@@ -1,5 +1,10 @@
-.post-list {
+.post-list, .archive {
     background-color: $mid-grey;
+}
+
+#post-list-header {
+    font-family: $nav-brand-font;
+    font-size: 70px;
 }
 
 .date-col {

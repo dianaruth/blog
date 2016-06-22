@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+<div class="post-list">
+    <div class="container">
+        <div class="row">
+            <h1 id="post-list-header" class="text-center">Posts</h1>
+            <br />
+        </div>
+        {% for post in paginator.posts %}
+        <div class="row">
+            <div class="col-lg-3 col-md-3 date-col">
+                <h5><time itemprop="dateCreated" datetime="{{post.date}}">{{post.date | date:"%B %-d, %Y"}}</time></h5>
+            </div>
+            <div class="col-lg-9 col-md-9">
+                <h3>{{post.title}}</h3>
+                <p>
+                    {{post.excerpt | strip_html}}...<a href="{{site.baseurl}}{{post.url}}">[read more]</a>
+                </p>
+            </div>
+        </div>
+        {% endfor %}
+        {% if paginator.previous_page %}
+        {% if paginator.previous_page == 1 %}
+        <a href="{{site.baseurl}}/posts/" id="newer-posts">[<< Newer]</a>
+        {% else %}
+        <a href="{{site.baseurl}}/posts/page{{paginator.previous_page}}" id="newer-posts">[<< Newer]</a>
+        {% endif %}
+        {% endif %}
+        {% if paginator.next_page %}
+        <a href="{{site.baseurl}}/posts/page{{paginator.next_page}}" id="older-posts">[Older >>]</a>
+        {% endif %}
+    </div>
+</div>
