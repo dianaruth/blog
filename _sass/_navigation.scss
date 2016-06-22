@@ -1,4 +1,5 @@
 .navbar-default {
+    margin-bottom: 0px;
     background-color: $dark-grey;
     border: none;
     border-radius: 0px;
@@ -9,15 +10,15 @@
         color: $pale-blue;
         &:hover {
             background-color: rgba(0, 0, 0, 0);
-            color: white;
+            color: $off-white;
         }
     }
     .navbar-nav>.active>a {
         background-color: rgba(0, 0, 0, 0);
-        color: $off-white;
+        color: white;
         &:hover {
             background-color: rgba(0, 0, 0, 0);
-            color: white;
+            color: $off-white;
         }
     }
     .navbar-brand {
@@ -26,7 +27,16 @@
         font-size: 35px;
         color: $pale-blue;
         &:hover {
-            color: white;
+            color: $off-white;
+        }
+    }
+    .navbar-toggle {
+        border: none;
+        &:focus, &:hover {
+            background-color: rgba(0, 0, 0, 0);
+        }
+        .icon-bar {
+            background-color: $pale-blue;
         }
     }
 }

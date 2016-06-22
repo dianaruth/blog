@@ -1,0 +1,89 @@
+h1 {
+    font-family: $nav-link-font;
+    color: $bright-blue;
+    font-weight: bolder;
+}
+
+h2 {
+    font-family: $heading-font;
+    color: $off-white;
+}
+
+h3 {
+    font-family: $heading-condensed-font;
+    color: white;
+}
+
+h4 {
+    font-family: $nav-link-font;
+    color: $bright-blue;
+    font-weight: bold;
+}
+
+h5 {
+    font-family: $heading-font;
+    color: $off-white;
+}
+
+h6 {
+    font-family: $heading-condensed-font;
+    color: white;
+}
+
+p {
+    font-family: $paragraph-font;
+    color: $pale-blue;
+}
+
+li {
+    font-family: $paragraph-font;
+    color: $pale-blue;
+}
+
+a {
+    font-family: $paragraph-font;
+    color: $bright-blue;
+    &:hover {
+        color: $off-white;
+    }
+}
+
+img {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.img-right {
+    float: right;
+    display: inline;
+    width: 40%;
+    margin-left: 20px;
+}
+
+.img-left {
+    float: left;
+    display: inline;
+    width: 40%;
+    margin-right: 20px;
+}
+
+.tag {
+    background-color: $off-white;
+    padding: 10px 15px 10px 15px;
+    font-size: 20px;
+    &:hover {
+        background-color: white;
+        cursor: pointer;
+    }
+    a {
+        font-family: $heading-condensed-font;
+        color: $dark-grey;
+        font-weight: bolder;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}

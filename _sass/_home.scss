@@ -1,0 +1,65 @@
+.flex-container {
+    height: 700px;
+    background: url("../images/background.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.intro-brand {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 80px;
+    border-radius: 50%;
+}
+
+#blog-brand {
+    font-family: $nav-brand-font;
+    color: $dark-grey;
+    font-size: 130px;
+    font-weight: bolder;
+}
+
+.blog-subtitle {
+    color: $mid-dark-grey;
+    font-family: $heading-font;
+    font-weight: bolder;
+}
+
+.main {
+    background-color: $mid-grey;
+}
+
+.main-block {
+    background-color: $dark-grey;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding: 30px;
+}
+
+.read-more {
+    float: right;
+    margin-right: 40px;
+}
+
+.all-posts {
+    margin-top: 70px;
+    text-align: center;
+}
+
+.tags {
+    line-height: 45px;
+}
+
+@media (max-width: 600px) {
+    #blog-brand {
+        font-size: 90px;
+    }
+    .blog-subtitle {
+        font-size: 20px;
+    }
+}
