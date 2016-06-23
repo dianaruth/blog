@@ -1,6 +1,6 @@
 .flex-container {
     height: 800px;
-    background: url("../images/background.jpg") no-repeat center center fixed;
+    background: url("../assets/background.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -78,6 +78,16 @@
 
 .tags {
     line-height: 55px;
+}
+
+.all-tags {
+    &:hover {
+        color: $bright-blue;
+    }
+}
+
+#divider {
+    height: 40px;
 }
 
 @media (max-width: 600px) {

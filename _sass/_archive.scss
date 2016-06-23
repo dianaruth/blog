@@ -7,7 +7,6 @@
 }
 
 .tag-cloud {
-
     margin-bottom: 60px;
 }
 
@@ -15,5 +14,16 @@
     &:hover {
         background-color: $off-white;
         cursor: default;
+    }
+}
+
+@media (max-width: 650px) {
+    .indented {
+        h2 {
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 18px;
+        }
     }
 }

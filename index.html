@@ -15,12 +15,21 @@ layout: default
     <div class="main">
         <div class="container">
             <div class="col-lg-3 col-md-3 main-block tags">
-                <h3><a href="{{site.baseurl}}/archive">Archive</a></h3>
+                <h2>Archive</h2>
                 {% capture site_tags %}{% for tag in site.tags %}{{tag | first}}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
                 {% assign sortedTags=site_tags | split:',' | sort %}
                 {% for tag in sortedTags %}
                 <span class="tag"><a href="#">{{tag}}</a></span>
                 {% endfor %}
+                <a href="{{site.baseurl}}/archive" class="text-center"><h3 class="all-tags">[All Tags]</h3></a>
+                <div id="divider"></div>
+                <h2>Recent Photos</h2>
+                {% for photo in site.static_files limit:7 | sort: 'modified_time' %}
+                {% if photo.path contains 'images' %}
+                <a href="{{site.baseurl}}/photos"><img src="{{site.baseurl}}{{photo.path}}" alt=""></a>
+                {% endif %}
+                {% endfor %}
+                <a href="{{site.baseurl}}/photos"><h3 class="all-posts">[All Photos]</h3></a>
             </div>
             <div class="col-lg-offset-1 col-lg-8 col-md-offset-1 col-md-8 main-block">
                 <h1>Recent Posts</h1>

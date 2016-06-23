@@ -4,16 +4,23 @@ layout: default
 
 <div class="photos">
     <div class="container">
-        <div class="row">
+        <h1 id="post-list-header" class="text-center">Photos</h1>
+        <section id="photos">
             {% for photo in site.static_files %}
             {% if photo.path contains 'images' %}
-            <div class="col-lg-3 col-md-3">
-                <p>
-                    <img src="{{site.baseurl}}{{photo.path}}" />
-                </p>
-            </div>
+            <img src="{{site.baseurl}}{{photo.path}}" alt="" onclick="showImageModal(this.getAttribute('src'));" >
             {% endif %}
             {% endfor %}
+        </section>
+        <div class="modal fade" id="image-modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>-->
+                    <div id="image-modal-body">
+                        ...
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
