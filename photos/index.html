@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<div class="photos">
+    <div class="container">
+        <div class="row">
+            {% for photo in site.static_files %}
+            {% if photo.path contains 'images' %}
+            <div class="col-lg-3 col-md-3">
+                <p>
+                    <img src="{{site.baseurl}}{{photo.path}}" />
+                </p>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</div>
