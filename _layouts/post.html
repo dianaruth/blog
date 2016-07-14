@@ -10,7 +10,7 @@ layout: default
         {{content}}
         <br>
         <div class="tags">
-            {% if page.tags %}<h3>Tags: </h3>{% for tag in page.tags %}<span class="tag"><a href="#">{{tag}}</a></span>{% endfor %}{% endif %}
+            {% if page.tags %}<h3>Tags: </h3>{% for tag in page.tags %}<span class="tag"><a href="{{site.baseurl}}/archive/index.html#{{tag | cgi_escape}}">{{tag}}</a></span>{% endfor %}{% endif %}
         </div>
         <div class="back-all-posts-wrapper text-center"><a class="back-all-posts" href="{{site.baseurl}}/posts/">[<< All Posts]</a></div>
     </div>
