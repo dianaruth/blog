@@ -1,8 +1,8 @@
 # Site settings
 title: Diana Ruth - Blog
-description: 
-baseurl: ""
-url: ""
+description:
+baseurl: "/blog"
+url: "https://dianaruth.github.io"
 github_username: dianaruth
 
 # Build settings
