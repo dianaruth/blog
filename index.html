@@ -23,7 +23,7 @@ layout: default
                 {% endfor %}
                 <a href="{{site.baseurl}}/archive" class="text-center"><h3 class="all-tags">[All Tags]</h3></a>
                 <div id="divider"></div>
-                <h2>Recent Photos</h2>
+                <h2>Photos</h2>
                 {% for photo in site.static_files limit:7 | sort: 'modified_time' %}
                 {% if photo.path contains 'images' %}
                 <a href="{{site.baseurl}}/photos"><img src="{{site.baseurl}}{{photo.path}}" alt=""></a>
